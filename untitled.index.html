@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Mobile Zone</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+        }
+        h1 { color: #ff4b2b; }
+        .upload-section {
+            margin: 25px 0;
+            padding: 15px;
+            border: 2px dashed #ff4b2b;
+            border-radius: 8px;
+            background: #252525;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .custom-btn {
+            background: #ff4b2b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .custom-btn:hover { background: #ff4122; }
+        .file-label { font-size: 14px; color: #bbb; display: block; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>PUBG Mobile Dashboard</h1>
+    <p>Upload your gameplay videos and headshot config files below.</p>
+
+    <div class="upload-section">
+        <h3>📹 Upload PUBG Video</h3>
+        <label for="video-upload" class="custom-btn">Select Video</label>
+        <input type="file" id="video-upload" accept="video/*">
+        <span class="file-label">Supports MP4, MOV, etc.</span>
+    </div>
+
+    <div class="upload-section">
+        <h3>🎯 Import Headshot Config File</h3>
+        <label for="config-upload" class="custom-btn">Select Config File</label>
+        <input type="file" id="config-upload" accept=".txt,.ini,.json,.cfg">
+        <span class="file-label">Supports .txt, .ini, .cfg files</span>
+    </div>
+</div>
+
+</body>
+</html>
