@@ -3,51 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To My Site</title>
+    <title>My PUBG Hub</title>
     <style>
         body {
-            background-color: #121212;
-            color: white;
+            background-color: #0b0c10;
+            color: #c5c6c7;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 50px;
-        }
-        .box {
-            background-color: #1e1e1e;
+            margin: 0;
             padding: 20px;
-            border-radius: 10px;
+        }
+        .main-box {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #1f2833;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #66fcf1;
+            box-shadow: 0 4px 20px rgba(0, 252, 241, 0.2);
+        }
+        h1 {
+            color: #66fcf1;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .section-card {
+            background: #0b0c10;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #45a29e;
+        }
+        h2 {
+            color: #45a29e;
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+        video {
+            width: 100%;
+            max-height: 400px;
+            border-radius: 6px;
+            background: #000;
+        }
+        .upload-download-btn {
             display: inline-block;
-            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.2);
-        }
-        button {
-            background-color: #00ff88;
-            color: black;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
+            background: #66fcf1;
+            color: #0b0c10;
+            padding: 12px 25px;
+            font-size: 1.1rem;
             font-weight: bold;
-            border-radius: 5px;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(102, 252, 241, 0.3);
+            transition: 0.2s;
+            margin-top: 10px;
             cursor: pointer;
-            margin-top: 15px;
+            border: none;
         }
-        button:hover {
-            background-color: #00cc6e;
+        .upload-download-btn:hover {
+            background: #45a29e;
+            color: #ffffff;
+            transform: scale(1.02);
         }
     </style>
 </head>
 <body>
 
-    <div class="box">
-        <h1>Welcome To Shahbaz's Web Space!</h1>
-        <p>Yeh meri pehli website hai jo bina kisi hosting ke free mein bani hai.</p>
-        <button onclick="showAlert()">Click Me!</button>
-    </div>
+    <div class="main-box">
+        <h1>My PUBG Mobile Hub</h1>
+        <p>Short Gameplay Status & Files</p>
 
-    <script>
-        function showAlert() {
-            alert("Bohat zabardast! Code bilkul sahi kaam kar raha hai.");
-        }
-    </script>
+        <div class="section-card">
+            <h2> My Short Screen Recording</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section-card">
+            <h2> PUBG File Download Center</h2>
+            <p>Niche diye gaye button par click karke direct file download karein:</p>
+            <a href="pubg-file.zip" class="upload-download-btn" download>Download PUBG File</a>
+        </div>
+    </div>
 
 </body>
 </html>
